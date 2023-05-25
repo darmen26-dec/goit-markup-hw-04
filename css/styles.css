@@ -77,8 +77,9 @@ span {
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none; /* usuwa podkreślenie */
-  color: var(--color-text);
-  /* inaczej Agencja, Portfolio i Kontakt mają inny kolor */
+  color: var(
+    --color-text
+  ); /* inaczej Agencja, Portfolio i Kontakt mają inny kolor */
   gap: 46px;
   padding-left: 0;
 }
@@ -97,6 +98,8 @@ span {
   letter-spacing: 0.02em;
   text-decoration: none; /* usuwa podkreślenie */
   color: var(--color-text-info);
+  display: flex;
+  align-items: center;
 }
 .header-section {
   display: flex;
@@ -117,7 +120,7 @@ span {
 }
 .menu-contact {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 30px;
 }
 .navigation:hover,
@@ -151,6 +154,7 @@ span {
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero/hero-background-image.jpg);
+  background-size: cover;
   border: 1px solid #000000;
 }
 .button-hero {
@@ -198,6 +202,15 @@ span {
   gap: 30px;
   padding-left: 0;
 }
+/* ===== ICONS ==== */
+.svg-what-we-do {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
 /* =========================== TEAM SECTION ===========================*/
 .team-background {
   background-color: #f5f4fa;
@@ -207,7 +220,7 @@ span {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--color-text-info);
-  margin: 0 auto 30px auto;
+  margin: 0 auto 16px auto;
   text-align: center;
 }
 .team-images {
@@ -215,6 +228,8 @@ span {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  max-width: 270px;
+  height: 428px;
 }
 .team-flex {
   display: flex;
@@ -222,6 +237,62 @@ span {
   gap: 30px;
   margin-top: 0;
   padding-left: 0;
+}
+/* ===== ICONS ==== */
+.team-social-links-margin {
+  display: flex;
+  gap: 10px;
+  margin-inline: 32px;
+  margin-bottom: 30px;
+}
+.team-social-links {
+  width: 44px;
+  height: 44px;
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.svg-social-icons {
+  fill: #afb1b8;
+}
+.team-social-links:hover,
+.team-social-links:focus {
+  background-color: var(--selected-text);
+  cursor: pointer;
+  border-radius: 50%;
+}
+.team-social-links:hover .svg-social-icons,
+.team-social-links:focus .svg-social-icons {
+  fill: var(--color-text-secondary);
+}
+/* =========================== OUR CLIENTS ===========================*/
+.clients-margin {
+  display: flex;
+  gap: 30px;
+}
+.clients {
+  width: 170px;
+  height: 92px;
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+/* ===== ICONS ==== */
+.svg-clients-logo {
+  fill: #afb1b8;
+}
+.clients:hover,
+.clients:focus {
+  cursor: pointer;
+  border: 1px solid var(--selected-text);
+}
+.clients:hover .svg-clients-logo,
+.clients:focus .svg-clients-logo {
+  fill: var(--selected-text);
 }
 /* =========================== FOOTER ===========================*/
 footer {
@@ -260,6 +331,46 @@ footer {
 .footer-contact:hover,
 .footer-contact:focus {
   color: var(--selected-text);
+}
+.footer-elements {
+  display: flex;
+}
+.footer-social-links {
+  padding-block: 0;
+}
+.join-to-us {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  margin-left: 70px;
+  margin-block: 12px 20px;
+  align-items: baseline;
+}
+.join-social-links {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-color: #ffffff1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.join-social-links-margin {
+  display: flex;
+  gap: 10px;
+  margin-left: 70px;
+}
+/* ===== ICONS ==== */
+.svg-footer-social-icons {
+  fill: var(--color-text-secondary);
+}
+.join-social-links:hover,
+.join-social-links:focus {
+  background-color: var(--selected-text);
+  cursor: pointer;
 }
 /* ================================== PORTFOLIO ==================================*/
 /* =========================== BUTTON ===========================*/
