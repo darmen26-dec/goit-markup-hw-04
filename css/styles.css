@@ -395,6 +395,8 @@ footer {
 .button-portfolio button:focus {
   color: var(--color-text-secondary);
   background-color: var(--selected-text);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 .project-name {
   font-weight: 700;
@@ -417,6 +419,7 @@ footer {
   justify-content: center;
   padding-left: 0px;
 }
+
 /* =========================== PROJECTS ===========================*/
 .projects-portfolio {
   display: flex;
@@ -440,4 +443,9 @@ footer {
   border-bottom: 1px solid #eeeeee;
   padding: 20px 24px;
   width: 370px;
+}
+.projects-portfolio-items:hover,
+.projects-portfolio-items:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
